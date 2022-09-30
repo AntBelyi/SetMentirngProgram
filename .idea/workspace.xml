@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2F6ih16Ktu6UbnfkfpuyPbrXo1v" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/qa-platform" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.LibraryProjectApplication">
+    <configuration name="BookDto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.dto.BookDto" />
+      <module name="libraryProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="epam.com.setMentoringProgram.libraryProject.dto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.services.BookService" />
+      <module name="libraryProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="epam.com.setMentoringProgram.libraryProject.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookYearOfWritingDeSerializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.utils.customDeSerializers.BookYearOfWritingDeSerializer" />
+      <module name="libraryProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="epam.com.setMentoringProgram.libraryProject.utils.customDeSerializers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VisitorDto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.dto.VisitorDto" />
+      <module name="libraryProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="epam.com.setMentoringProgram.libraryProject.dto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="libraryProject" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="epam.com.setMentoringProgram.libraryProject.LibraryProjectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BookYearOfWritingDeSerializer" />
+        <item itemvalue="Application.BookService" />
+        <item itemvalue="Application.BookDto" />
+        <item itemvalue="Application.VisitorDto" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="" />
+      <created>1663819049989</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663819049989</updated>
+      <workItem from="1663819051244" duration="3960000" />
+      <workItem from="1663965990421" duration="15323000" />
+      <workItem from="1664049074180" duration="10059000" />
+      <workItem from="1664093573231" duration="10239000" />
+      <workItem from="1664165279893" duration="2759000" />
+      <workItem from="1664180310017" duration="10498000" />
+      <workItem from="1664290860667" duration="29184000" />
+      <workItem from="1664480699136" duration="5683000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="327" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="328" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="329" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="372" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="373" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="374" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="375" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="376" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
