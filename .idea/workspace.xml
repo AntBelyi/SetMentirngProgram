@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="" />
+    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="Library project first commit and push">
+      <change afterPath="$PROJECT_DIR$/libraryProject/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/resources/dataTables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/sql/dataTables.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +22,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,8 +50,15 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/qa-platform" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../collab-docker" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\UX503030\IdeaProjects\SetMentoringProgram\libraryProject\sql" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.LibraryProjectApplication">
     <configuration name="BookDto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -130,11 +145,25 @@
       <workItem from="1664180310017" duration="10498000" />
       <workItem from="1664290860667" duration="29184000" />
       <workItem from="1664480699136" duration="5683000" />
+      <workItem from="1664548480266" duration="1204000" />
+      <workItem from="1664723479062" duration="8695000" />
     </task>
+    <task id="LOCAL-00001" summary="Library project first commit and push">
+      <created>1664548777822</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664548777822</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Library project first commit and push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Library project first commit and push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

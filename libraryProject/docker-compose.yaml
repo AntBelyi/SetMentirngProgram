@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  db_library:
+    container_name: db_library
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=library
+      - POSTGRES_PASSWORD=mypassword
+      - POSTGRES_USER=myusername
+    volumes:
+      - ./sql/dataTables.sql:/docker-entrypoint-initdb.d/dataTables.sql
+    image: postgres:11.4
+
