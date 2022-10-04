@@ -1,5 +1,6 @@
 package epam.com.setMentoringProgram.libraryProject.services;
 
+import epam.com.setMentoringProgram.libraryProject.dto.VisitorDto;
 import epam.com.setMentoringProgram.libraryProject.models.Visitor;
 import epam.com.setMentoringProgram.libraryProject.repositories.VisitorRepository;
 import epam.com.setMentoringProgram.libraryProject.utils.exceptions.EntityNotFoundException;
@@ -14,6 +15,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 import static epam.com.setMentoringProgram.libraryProject.enums.ValidationMessages.VISITOR_BY_ID_NOT_FOUND;
+import static epam.com.setMentoringProgram.libraryProject.utils.validators.ConverterUtils.convertToEntity;
 
 @Service
 @Transactional(readOnly = true)
@@ -46,11 +48,23 @@ public class VisitorService {
     }
 
     @Transactional
+    public List<VisitorDto> createVisitor(VisitorDto visitorDto) {
+        createVisitor(convertToEntity(visitorDto, Visitor.class));
+        return getVisitors().stream().map(visitor -> convertToEntity(visitor, VisitorDto.class)).collect(Collectors.toList());
+    }
+
+    @Transactional
     public void updatedVisitor(int updatedVisitorId, Visitor visitor) {
         if(Objects.nonNull(getVisitorById(updatedVisitorId))) {
             visitor.setId(updatedVisitorId);
             visitorRepository.save(visitor);
         }
+    }
+
+    @Transactional
+    public VisitorDto updatedVisitor(int updatedVisitorId, VisitorDto visitorDto) {
+        updatedVisitor(updatedVisitorId, convertToEntity(visitorDto, Visitor.class));
+        return convertToEntity(getVisitorById(updatedVisitorId), VisitorDto.class);
     }
 
     @Transactional
