@@ -7,6 +7,8 @@ import epam.com.setMentoringProgram.libraryProject.repositories.BookRepository;
 import epam.com.setMentoringProgram.libraryProject.utils.exceptions.EntityNotFoundException;
 import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,8 +23,10 @@ import static epam.com.setMentoringProgram.libraryProject.utils.validators.Conve
 @Service
 @Transactional(readOnly = true)
 public class BookService {
+
     private final BookRepository bookRepository;
     private final VisitorService visitorService;
+    private static final String FIELD_FOR_SORTING = "id";
 
     @Autowired
     public BookService(BookRepository bookRepository, VisitorService visitorService) {
@@ -31,7 +35,17 @@ public class BookService {
     }
 
     public List<Book> getBooks() {
-        return bookRepository.findAll().stream().peek(book -> book.setWhoRead(null)).collect(Collectors.toList());
+        return bookRepository.findAll(Sort.by(FIELD_FOR_SORTING)).stream().peek(book -> book.setWhoRead(null)).collect(Collectors.toList());
+    }
+
+    public List<BookDto> getBooks(Class<BookDto> bookDtoClass) {
+        return getBooks().stream().map(book -> convertToEntity(book, bookDtoClass)).collect(Collectors.toList());
+    }
+
+    public List<BookDto> getBooks(int page, int countOfBooksToDisplay, Class<BookDto> bookDtoClass) {
+        return bookRepository.findAll(PageRequest.of(page, countOfBooksToDisplay, Sort.by(FIELD_FOR_SORTING)))
+                .stream().peek(book -> book.setWhoRead(null))
+                .map(book -> convertToEntity(book, bookDtoClass)).collect(Collectors.toList());
     }
 
     public Book getBookById(int bookId) {

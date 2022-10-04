@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static epam.com.setMentoringProgram.libraryProject.utils.validators.ConverterUtils.convertToEntity;
 
@@ -30,8 +29,13 @@ public class VisitorsController extends BaseController {
 
     @GetMapping()
     public List<VisitorDto> getVisitors() {
-        return visitorService.getVisitors().stream()
-                .map(visitor -> convertToEntity(visitor, VisitorDto.class)).collect(Collectors.toList());
+        return visitorService.getVisitors(VisitorDto.class);
+    }
+
+    @GetMapping(params = {"page", "countOfItems"})
+    public List<VisitorDto> getVisitors(@RequestParam(value = "page") int page,
+                                        @RequestParam(value = "countOfItems") int countOfItems) {
+        return visitorService.getVisitors(page, countOfItems, VisitorDto.class);
     }
 
     @GetMapping("/{id}")

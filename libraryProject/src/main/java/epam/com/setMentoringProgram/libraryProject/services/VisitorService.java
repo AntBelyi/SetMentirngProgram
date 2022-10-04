@@ -6,6 +6,8 @@ import epam.com.setMentoringProgram.libraryProject.repositories.VisitorRepositor
 import epam.com.setMentoringProgram.libraryProject.utils.exceptions.EntityNotFoundException;
 import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,7 +22,9 @@ import static epam.com.setMentoringProgram.libraryProject.utils.validators.Conve
 @Service
 @Transactional(readOnly = true)
 public class VisitorService {
+
     private final VisitorRepository visitorRepository;
+    private static final String FIELD_FOR_SORTING = "id";
 
     @Autowired
     public VisitorService(VisitorRepository visitorRepository) {
@@ -28,7 +32,17 @@ public class VisitorService {
     }
 
     public List<Visitor> getVisitors() {
-        return visitorRepository.findAll().stream().peek(visitor -> visitor.setBooks(null)).collect(Collectors.toList());
+        return visitorRepository.findAll(Sort.by(FIELD_FOR_SORTING)).stream().peek(visitor -> visitor.setBooks(null)).collect(Collectors.toList());
+    }
+
+    public List<VisitorDto> getVisitors(Class<VisitorDto> visitorDtoClazz) {
+        return getVisitors().stream().map(visitor -> convertToEntity(visitor, visitorDtoClazz)).collect(Collectors.toList());
+    }
+
+    public List<VisitorDto> getVisitors(int page, int countOfVisitorsToDisplay, Class<VisitorDto> visitorDtoClass) {
+        return visitorRepository.findAll(PageRequest.of(page, countOfVisitorsToDisplay, Sort.by(FIELD_FOR_SORTING)))
+                .stream().peek(visitor -> visitor.setBooks(null))
+                .map(visitor -> convertToEntity(visitor, visitorDtoClass)).collect(Collectors.toList());
     }
 
     public Visitor getVisitorById(int visitorId) {

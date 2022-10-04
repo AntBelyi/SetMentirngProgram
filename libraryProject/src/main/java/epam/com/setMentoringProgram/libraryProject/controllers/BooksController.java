@@ -2,7 +2,6 @@ package epam.com.setMentoringProgram.libraryProject.controllers;
 
 import epam.com.setMentoringProgram.libraryProject.dto.BookDto;
 import epam.com.setMentoringProgram.libraryProject.dto.VisitorDto;
-import epam.com.setMentoringProgram.libraryProject.models.Book;
 import epam.com.setMentoringProgram.libraryProject.services.BookService;
 import epam.com.setMentoringProgram.libraryProject.utils.validators.BookValidator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static epam.com.setMentoringProgram.libraryProject.utils.validators.ConverterUtils.convertToEntity;
 
@@ -32,8 +30,13 @@ public class BooksController extends BaseController {
 
     @GetMapping()
     public List<BookDto> getBooks() {
-        List<Book> booksList = bookService.getBooks();
-        return booksList.stream().map(book -> convertToEntity(book, BookDto.class)).collect(Collectors.toList());
+        return bookService.getBooks(BookDto.class);
+    }
+
+    @GetMapping(params = {"page", "countOfItems"})
+    public List<BookDto> getBooks(@RequestParam(value = "page") int page,
+                                  @RequestParam(value = "countOfItems") int countOfItems) {
+        return bookService.getBooks(page, countOfItems, BookDto.class);
     }
 
     @GetMapping("/{id}")
