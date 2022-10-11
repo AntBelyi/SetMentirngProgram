@@ -6,12 +6,12 @@ import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 import epam.com.setMentoringProgram.libraryProject.utils.exceptions.EntityValidationException;
 import lombok.SneakyThrows;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import static epam.com.setMentoringProgram.libraryProject.enums.DateFormattingValues.VISITOR_DATE_VALUES;
 import static epam.com.setMentoringProgram.libraryProject.enums.ValidationMessages.*;
+import static epam.com.setMentoringProgram.libraryProject.utils.validators.DateUtils.getDateBySpecificFormat;
 
 public class VisitorDateOfBirthDeSerializer extends StdDeserializer<Date> {
 
@@ -24,7 +24,7 @@ public class VisitorDateOfBirthDeSerializer extends StdDeserializer<Date> {
     public Date deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) {
         String value = jsonParser.readValueAs(String.class);
         try {
-            Date dateOfBirth = new SimpleDateFormat(VISITOR_DATE_VALUES.getDateCreatingPattern()).parse(value);
+            Date dateOfBirth = getDateBySpecificFormat(VISITOR_DATE_VALUES.getDateCreatingPattern(), value);
             if(dateOfBirth.before(new SimpleDateFormat(VISITOR_DATE_VALUES.getDateCreatingPattern()).parse(VISITOR_DATE_VALUES.getLowerDateRange()))) {
                 throw new EntityValidationException(DATE_OF_BIRTH_CANT_BE_EARLIER_THAN.getErrorMessage());
             } else if(dateOfBirth.after(new Date())) {
@@ -32,7 +32,7 @@ public class VisitorDateOfBirthDeSerializer extends StdDeserializer<Date> {
             } else {
                 return dateOfBirth;
             }
-        } catch (ParseException e) {
+        } catch (EntityValidationException ex) {
             throw new EntityValidationException(PATTERN_FOR_DATE_OF_BIRTH_VALUE.getErrorMessage());
         }
     }

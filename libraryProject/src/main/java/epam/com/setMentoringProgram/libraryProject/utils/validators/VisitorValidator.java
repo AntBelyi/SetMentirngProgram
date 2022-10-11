@@ -31,7 +31,7 @@ public class VisitorValidator implements Validator {
     @Override
     public void validate(Object target, Errors errors) {
         Visitor visitor = convertToEntity(target, Visitor.class);
-        Visitor visitorFromDB = visitorService.getVisitorByInitials(visitor.getInitials(), visitor.getDateOfBirth());
+        Visitor visitorFromDB = visitorService.getVisitorByInitialsAndDateOfBirth(visitor.getInitials(), visitor.getDateOfBirth());
         if(Objects.nonNull(visitorFromDB)) {
             throw new EntityValidationException(VISITOR_IS_ALREADY_REGISTERED.getErrorMessage());
         }

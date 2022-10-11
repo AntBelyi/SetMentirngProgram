@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import epam.com.setMentoringProgram.libraryProject.utils.customDeSerializers.VisitorDateOfBirthDeSerializer;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
@@ -15,6 +16,7 @@ import java.util.Objects;
 @Data
 @Entity
 @Table(name = "Visitor")
+@Accessors(chain = true)
 public class Visitor {
 
     @Id

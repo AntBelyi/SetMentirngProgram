@@ -52,7 +52,7 @@ public class VisitorService {
         return visitor;
     }
 
-    public Visitor getVisitorByInitials(String initials, Date dateOfBirth) {
+    public Visitor getVisitorByInitialsAndDateOfBirth(String initials, Date dateOfBirth) {
         return visitorRepository.findByInitialsAndDateOfBirth(initials, dateOfBirth);
     }
 

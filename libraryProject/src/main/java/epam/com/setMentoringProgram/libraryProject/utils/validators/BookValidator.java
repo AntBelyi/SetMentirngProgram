@@ -31,7 +31,7 @@ public class BookValidator implements Validator {
     @Override
     public void validate(Object target, Errors errors) {
         Book book = convertToEntity(target, Book.class);
-        Book bookFromDB = bookService.getBookByNameAndYearOfWriting(book.getName(), book.getAuthor(), book.getYearOfWriting());
+        Book bookFromDB = bookService.getBookByNameAndAuthorAndYearOfWriting(book.getName(), book.getAuthor(), book.getYearOfWriting());
         if(Objects.nonNull(bookFromDB)) {
             throw new EntityValidationException(BOOK_IS_ALREADY_EXIST.getErrorMessage());
         }
