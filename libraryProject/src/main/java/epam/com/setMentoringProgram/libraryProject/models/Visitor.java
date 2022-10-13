@@ -22,7 +22,7 @@ public class Visitor {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @Column(name = "initials")
     @Pattern(regexp = "[A-Z][a-z]{2,15} [A-Z][a-z]{2,15} [A-Z][a-z]{2,15}", message = "Enter name in such format, please: <Shevchenko Taras Hryhorovych>")
@@ -54,4 +54,14 @@ public class Visitor {
         this.books.add(book);
     }
 
+    @Override
+    public String toString() {
+        return "Visitor{" +
+                "id=" + id +
+                ", initials='" + initials + '\'' +
+                ", age=" + age +
+                ", dateOfBirth=" + dateOfBirth +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }

@@ -1,10 +1,12 @@
-package epam.com.setMentoringProgram.libraryProject.services;
+package epam.com.setMentoringProgram.libraryProject.unitTests.services;
 
 import epam.com.setMentoringProgram.libraryProject.BaseBookAbstractTest;
 import epam.com.setMentoringProgram.libraryProject.dto.BookDto;
 import epam.com.setMentoringProgram.libraryProject.models.Book;
 import epam.com.setMentoringProgram.libraryProject.models.Visitor;
 import epam.com.setMentoringProgram.libraryProject.repositories.BookRepository;
+import epam.com.setMentoringProgram.libraryProject.services.BookService;
+import epam.com.setMentoringProgram.libraryProject.services.VisitorService;
 import epam.com.setMentoringProgram.libraryProject.utils.exceptions.EntityNotFoundException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -1,5 +1,5 @@
 package epam.com.setMentoringProgram.libraryProject;
 
-public class BaseTest {
+public abstract class BaseTest {
     protected static final String ID_FIELD = "id";
 }

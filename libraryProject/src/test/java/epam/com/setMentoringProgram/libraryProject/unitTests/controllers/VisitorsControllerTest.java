@@ -1,6 +1,7 @@
-package epam.com.setMentoringProgram.libraryProject.controllers;
+package epam.com.setMentoringProgram.libraryProject.unitTests.controllers;
 
 import epam.com.setMentoringProgram.libraryProject.BaseVisitorAbstractTest;
+import epam.com.setMentoringProgram.libraryProject.controllers.VisitorsController;
 import epam.com.setMentoringProgram.libraryProject.dto.VisitorDto;
 import epam.com.setMentoringProgram.libraryProject.models.Visitor;
 import epam.com.setMentoringProgram.libraryProject.services.VisitorService;
@@ -64,9 +65,8 @@ class VisitorsControllerTest extends BaseVisitorAbstractTest {
     void getVisitors() throws Exception {
         when(visitorService.getVisitors(VisitorDto.class)).thenReturn(initVisitorDtoList);
 
-        final String link = "/visitors";
         mockMvc.perform(MockMvcRequestBuilders
-                        .get(link))
+                        .get(getLinkForGettingVisitors()))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(initVisitorDtoList.size())))
@@ -81,10 +81,8 @@ class VisitorsControllerTest extends BaseVisitorAbstractTest {
         int countOfItems = 2;
         when(visitorService.getVisitors(page, countOfItems, VisitorDto.class)).thenReturn(initVisitorDtoList);
 
-        final String link = String.format("/visitors?page=%d&countOfItems=%d", page, countOfItems);
-
         mockMvc.perform(MockMvcRequestBuilders
-                .get(link)
+                .get(getLinkForGettingVisitors())
                 .param("page", String.valueOf(page))
                 .param("countOfItems", String.valueOf(countOfItems)))
                 .andDo(print())
@@ -100,10 +98,8 @@ class VisitorsControllerTest extends BaseVisitorAbstractTest {
     void getVisitorById() throws Exception {
         when(visitorService.getVisitorById(anyInt())).thenReturn(convertToEntity(williamVisitorDto, Visitor.class));
 
-        final String link = String.format("/visitors/%s", WILLIAM_ID);
-
         mockMvc.perform(MockMvcRequestBuilders
-                        .get(link))
+                        .get(getLinkForGettingVisitorById(WILLIAM_ID)))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id", is(WILLIAM_ID)))
@@ -119,10 +115,8 @@ class VisitorsControllerTest extends BaseVisitorAbstractTest {
     void createVisitor() throws Exception {
         when(visitorService.createVisitor(williamVisitorDto)).thenReturn(initVisitorDtoList);
 
-        final String link = "/visitors/new";
-
         mockMvc.perform(MockMvcRequestBuilders
-                        .post(link)
+                        .post(getLinkForCreatingVisitor())
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
                         .content(getJsonFromObject(williamVisitorDto)))
                 .andDo(print())
@@ -142,10 +136,8 @@ class VisitorsControllerTest extends BaseVisitorAbstractTest {
 
         when(visitorService.updatedVisitor(STEVE_ID, updatedVisitorDto)).thenReturn(steveVisitorDto);
 
-        final String link = String.format("/visitors/update/%s", STEVE_ID);
-
         mockMvc.perform(MockMvcRequestBuilders
-                        .put(link)
+                        .put(getLinkForUpdatingVisitor(STEVE_ID))
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
                         .content(getJsonFromObject(updatedVisitorDto)))
                 .andDo(print())
@@ -161,10 +153,8 @@ class VisitorsControllerTest extends BaseVisitorAbstractTest {
 
     @Test
     void deleteVisitor() throws Exception {
-        final String link = String.format("/visitors/delete/%s", STEVE_ID);
-
         mockMvc.perform(MockMvcRequestBuilders
-                        .delete(link))
+                        .delete(getLinkForDeletingVisitor(STEVE_ID)))
                 .andDo(print())
                 .andExpect(status().isOk());
     }

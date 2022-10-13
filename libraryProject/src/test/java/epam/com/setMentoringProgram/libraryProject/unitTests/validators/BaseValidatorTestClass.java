@@ -1,4 +1,4 @@
-package epam.com.setMentoringProgram.libraryProject.utils.validators;
+package epam.com.setMentoringProgram.libraryProject.unitTests.validators;
 
 import org.springframework.validation.Errors;
 

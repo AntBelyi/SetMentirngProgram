@@ -1,6 +1,7 @@
-package epam.com.setMentoringProgram.libraryProject.controllers;
+package epam.com.setMentoringProgram.libraryProject.unitTests.controllers;
 
 import epam.com.setMentoringProgram.libraryProject.BaseBookAbstractTest;
+import epam.com.setMentoringProgram.libraryProject.controllers.BooksController;
 import epam.com.setMentoringProgram.libraryProject.dto.BookDto;
 import epam.com.setMentoringProgram.libraryProject.dto.VisitorDto;
 import epam.com.setMentoringProgram.libraryProject.models.Book;
@@ -66,9 +67,8 @@ class BooksControllerTest extends BaseBookAbstractTest {
     void getBooks() throws Exception {
         when(bookService.getBooks(BookDto.class)).thenReturn(initBookDtoList);
 
-        final String link = "/books";
         mockMvc.perform(MockMvcRequestBuilders
-                        .get(link))
+                        .get(getLinkForGettingBooks()))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(initBookDtoList.size())))
@@ -83,10 +83,8 @@ class BooksControllerTest extends BaseBookAbstractTest {
         int countOfItems = 2;
         when(bookService.getBooks(page, countOfItems, BookDto.class)).thenReturn(initBookDtoList);
 
-        final String link = String.format("/books?page=%d&countOfItems=%d", page, countOfItems);
-
         mockMvc.perform(MockMvcRequestBuilders
-                        .get(link)
+                        .get(getLinkForGettingBooks())
                         .param("page", String.valueOf(page))
                         .param("countOfItems", String.valueOf(countOfItems)))
                 .andDo(print())
@@ -102,10 +100,8 @@ class BooksControllerTest extends BaseBookAbstractTest {
     void getBookById() throws Exception {
         when(bookService.getBookById(anyInt())).thenReturn(convertToEntity(javaBookDto, Book.class));
 
-        final String link = String.format("/books/%s", JAVA_BOOK_ID);
-
         mockMvc.perform(MockMvcRequestBuilders
-                        .get(link))
+                        .get(getLinkForGettingBookById(JAVA_BOOK_ID)))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id", is(JAVA_BOOK_ID)))
@@ -120,10 +116,8 @@ class BooksControllerTest extends BaseBookAbstractTest {
     void createBook() throws Exception {
         when(bookService.createBook(javaBookDto)).thenReturn(initBookDtoList);
 
-        final String link = "/books/new";
-
         mockMvc.perform(MockMvcRequestBuilders
-                        .post(link)
+                        .post(getLinkForCreatingBook())
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
                         .content(getJsonFromObject(javaBookDto)))
                 .andDo(print())
@@ -142,10 +136,8 @@ class BooksControllerTest extends BaseBookAbstractTest {
                 .setYearOfWriting(getDateBySpecificFormat(BOOK_DATE_VALUES.getDateCreatingPattern(), "2005"));
         when(bookService.updateBook(CLEAN_CODE_BOOK_ID, updatedBookDto)).thenReturn(cleanCodeBookDto);
 
-        final String link = String.format("/books/update/%s", CLEAN_CODE_BOOK_ID);
-
         mockMvc.perform(MockMvcRequestBuilders
-                        .put(link)
+                        .put(getLinkForUpdatingBook(CLEAN_CODE_BOOK_ID))
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
                         .content(getJsonFromObject(updatedBookDto)))
                 .andDo(print())
@@ -171,10 +163,8 @@ class BooksControllerTest extends BaseBookAbstractTest {
         when(bookService.assignBookToVisitor(JAVA_BOOK_ID, visitorWhoReadId, BookDto.class))
                 .thenReturn(bookIsGonnaBeAssigned);
 
-        final String link = String.format("/books/assign/%s", JAVA_BOOK_ID);
-
         mockMvc.perform(MockMvcRequestBuilders
-                        .patch(link)
+                        .patch(getLinkForAssigningBookToVisitor(JAVA_BOOK_ID))
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
                         .content(getJsonFromObject(new VisitorDto().setId(visitorWhoReadId))))
                 .andDo(print())
@@ -195,10 +185,8 @@ class BooksControllerTest extends BaseBookAbstractTest {
     void handInBook() throws Exception {
         when(bookService.handInBook(JAVA_BOOK_ID, BookDto.class)).thenReturn(javaBookDto);
 
-        final String link = String.format("/books/handIn/%s", JAVA_BOOK_ID);
-
         mockMvc.perform(MockMvcRequestBuilders
-                        .patch(link))
+                        .patch(getLinkForHandingInBook(JAVA_BOOK_ID)))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().contentType("application/json"))
@@ -210,10 +198,8 @@ class BooksControllerTest extends BaseBookAbstractTest {
 
     @Test
     void deleteBook() throws Exception {
-        final String link = String.format("/books/delete/%s", CLEAN_CODE_BOOK_ID);
-
         mockMvc.perform(MockMvcRequestBuilders
-                        .delete(link))
+                        .delete(getLinkForDeletingBook(CLEAN_CODE_BOOK_ID)))
                 .andDo(print())
                 .andExpect(status().isOk());
     }

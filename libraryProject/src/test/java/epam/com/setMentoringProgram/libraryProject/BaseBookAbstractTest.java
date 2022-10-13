@@ -11,6 +11,8 @@ import static epam.com.setMentoringProgram.libraryProject.utils.validators.DateU
 
 public abstract class BaseBookAbstractTest extends BaseTest {
 
+    private static final String PATH_TO_BOOKS_CONTROLLER = "/books";
+
     protected static List<Book> initBookList;
     protected static Book cleanCodeBook;
     protected static Book javaBook;
@@ -32,6 +34,34 @@ public abstract class BaseBookAbstractTest extends BaseTest {
         javaBook = new Book().setId(JAVA_BOOK_ID).setName(JAVA_BOOK_NAME).setAuthor(JAVA_BOOK_AUTHOR)
                 .setYearOfWriting(JAVA_BOOK_YEAR_OF_WRITING);
         initBookList = List.of(cleanCodeBook, javaBook);
+    }
+
+    protected String getLinkForGettingBooks() {
+        return PATH_TO_BOOKS_CONTROLLER;
+    }
+
+    protected String getLinkForGettingBookById(int bookIdThatIsGonnaBeGotFromBD) {
+        return String.format("%s/%s", PATH_TO_BOOKS_CONTROLLER, bookIdThatIsGonnaBeGotFromBD);
+    }
+
+    protected String getLinkForCreatingBook() {
+        return String.format("%s/new", PATH_TO_BOOKS_CONTROLLER);
+    }
+
+    protected String getLinkForUpdatingBook(int bookIdThatIsGonnaBeUpdated) {
+        return String.format("%s/update/%s", PATH_TO_BOOKS_CONTROLLER, bookIdThatIsGonnaBeUpdated);
+    }
+
+    protected String getLinkForAssigningBookToVisitor(int bookIdThatIsGonnaBeAssigned) {
+        return String.format("%s/assign/%s", PATH_TO_BOOKS_CONTROLLER, bookIdThatIsGonnaBeAssigned);
+    }
+
+    protected String getLinkForDeletingBook(int bookIdThatIsGonnaBeDeleted) {
+        return String.format("%s/delete/%s", PATH_TO_BOOKS_CONTROLLER, bookIdThatIsGonnaBeDeleted);
+    }
+
+    protected String getLinkForHandingInBook(int bookId) {
+        return String.format("%s/handIn/%s", PATH_TO_BOOKS_CONTROLLER, bookId);
     }
 
 }

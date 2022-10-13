@@ -1,10 +1,11 @@
-package epam.com.setMentoringProgram.libraryProject.utils.validators;
+package epam.com.setMentoringProgram.libraryProject.unitTests.validators;
 
 import epam.com.setMentoringProgram.libraryProject.dto.VisitorDto;
 import epam.com.setMentoringProgram.libraryProject.models.Book;
 import epam.com.setMentoringProgram.libraryProject.models.Visitor;
 import epam.com.setMentoringProgram.libraryProject.services.VisitorService;
 import epam.com.setMentoringProgram.libraryProject.utils.exceptions.EntityValidationException;
+import epam.com.setMentoringProgram.libraryProject.utils.validators.VisitorValidator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
