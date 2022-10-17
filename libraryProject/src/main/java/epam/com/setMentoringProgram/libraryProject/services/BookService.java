@@ -55,7 +55,7 @@ public class BookService {
         return book;
     }
 
-    public Book getBookByNameAndYearOfWriting(String name, String author, Date yearOfWriting) {
+    public Book getBookByNameAndAuthorAndYearOfWriting(String name, String author, Date yearOfWriting) {
         return bookRepository.findByNameAndAuthorAndYearOfWriting(name, author, yearOfWriting);
     }
 
