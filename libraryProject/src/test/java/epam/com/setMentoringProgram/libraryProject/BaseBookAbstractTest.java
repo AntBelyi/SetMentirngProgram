@@ -11,7 +11,7 @@ import static epam.com.setMentoringProgram.libraryProject.utils.validators.DateU
 
 public abstract class BaseBookAbstractTest extends BaseTest {
 
-    private static final String PATH_TO_BOOKS_CONTROLLER = "/books";
+    private static final String PATH_TO_BOOKS_CONTROLLER = "/api/books";
 
     protected static List<Book> initBookList;
     protected static Book cleanCodeBook;
@@ -20,12 +20,12 @@ public abstract class BaseBookAbstractTest extends BaseTest {
     protected static final int CLEAN_CODE_BOOK_ID = 1;
     protected static final String CLEAN_CODE_BOOK_NAME = "Clean code";
     protected static final String CLEAN_CODE_BOOK_AUTHOR = "Robert Martin";
-    protected static final Date CLEAN_CODE_BOOK_YEAR_OF_WRITING = getDateBySpecificFormat(BOOK_DATE_VALUES.getDateCreatingPattern(), "2009");
+    protected static final Date CLEAN_CODE_BOOK_YEAR_OF_WRITING = getDateBySpecificFormat(BOOK_DATE_VALUES, "2009");
 
     protected static final int JAVA_BOOK_ID = 2;
     protected static final String JAVA_BOOK_NAME = "Java";
     protected static final String JAVA_BOOK_AUTHOR = "Joshua Bloch";
-    protected static final Date JAVA_BOOK_YEAR_OF_WRITING = getDateBySpecificFormat(BOOK_DATE_VALUES.getDateCreatingPattern(), "2005");
+    protected static final Date JAVA_BOOK_YEAR_OF_WRITING = getDateBySpecificFormat(BOOK_DATE_VALUES, "2005");
 
     @BeforeAll
     public static void setUp() {

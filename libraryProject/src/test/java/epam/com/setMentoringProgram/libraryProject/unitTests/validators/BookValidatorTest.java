@@ -34,7 +34,7 @@ class BookValidatorTest extends BaseValidatorTestClass {
     private static final BookDto BOOK_DTO = mock(BookDto.class);
     private static final String BOOK_NAME = "Clean Code";
     private static final String AUTHOR_NAME = "Robert Martin";
-    private static final Date YEAR_OF_WRITING = getDateBySpecificFormat(BOOK_DATE_VALUES.getDateCreatingPattern(), "1100");;
+    private static final Date YEAR_OF_WRITING = getDateBySpecificFormat(BOOK_DATE_VALUES, "1100");;
 
     @BeforeAll
     public static void setUp() {

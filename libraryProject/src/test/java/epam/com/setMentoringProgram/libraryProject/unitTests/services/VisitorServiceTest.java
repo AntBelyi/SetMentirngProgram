@@ -135,7 +135,7 @@ class VisitorServiceTest extends BaseVisitorAbstractTest {
     @Test
     void updatedVisitorDtoTest() {
         VisitorDto antonVisitorDto = new VisitorDto().setInitials("William Jefferson Clinton").setAge(33).setEmail("clinton@gmail.com")
-                .setDateOfBirth(getDateBySpecificFormat(VISITOR_DATE_VALUES.getDateCreatingPattern(), "21-02-1995"));
+                .setDateOfBirth(getDateBySpecificFormat(VISITOR_DATE_VALUES, "21-02-1995"));
 
         when(visitorRepository.findById(anyInt())).thenReturn(
                 Optional.of(convertToEntity(antonVisitorDto, Visitor.class))

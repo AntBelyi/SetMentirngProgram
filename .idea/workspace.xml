@@ -4,29 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="Cover services and controllers by unit tests">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_2_1_214.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/integrationTests/BooksControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/integrationTests/VisitorsControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraryProject/src/test/resources/application-integration-test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraryProject/src/test/resources/h2ClearFixturesCommand.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraryProject/src/test/resources/h2FillOutDBWithData.sql" afterDir="false" />
+    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="Implementation ui part of app">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_15_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_15_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/BaseUiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/UiBooksController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/UiVisitorsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/resources/templates/books/createBookPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/resources/templates/books/showAllBooksPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/resources/templates/books/showBookByIdPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/resources/templates/books/updateBookPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/resources/templates/visitors/createVisitorPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/resources/templates/visitors/showAllVisitorsPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/resources/templates/visitors/showVisitorByIdPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/resources/templates/visitors/updateVisitorPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/LibraryProject.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/LibraryProject.postman_collection.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/enums/DateFormattingValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/enums/DateFormattingValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/models/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/models/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/models/Visitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/BaseApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/BooksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/ApiBooksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/VisitorsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/ApiVisitorsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/dto/BookDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/dto/BookDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/dto/VisitorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/dto/VisitorDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/customDeSerializers/BookYearOfWritingDeSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/customDeSerializers/BookYearOfWritingDeSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/customDeSerializers/VisitorDateOfBirthDeSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/customDeSerializers/VisitorDateOfBirthDeSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/BaseBookAbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/BaseBookAbstractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/BaseVisitorAbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/BaseVisitorAbstractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/controllers/BooksControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/controllers/BooksControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/controllers/VisitorsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/controllers/VisitorsControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/services/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/services/BookServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/services/VisitorServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/services/VisitorServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BaseValidatorTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/validators/BaseValidatorTestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/validators/BookValidatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/validators/VisitorValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/integrationTests/BooksControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/integrationTests/BooksControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/integrationTests/VisitorsControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/integrationTests/VisitorsControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/controllers/BooksControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/controllers/BooksControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/controllers/VisitorsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/controllers/VisitorsControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/services/VisitorServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/services/VisitorServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/validators/BookValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/validators/BookValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/validators/VisitorValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/validators/VisitorValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +55,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -69,7 +89,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2F6ih16Ktu6UbnfkfpuyPbrXo1v" />
   <component name="ProjectViewState">
@@ -79,6 +99,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -90,12 +111,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Alishev_SpringCource/HibernateProjects/SetCourcePreparation_AlishevCource_FirstSimpleHibernateProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../qa-platform" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\UX503030\IdeaProjects\SetMentoringProgram\libraryProject\src\main\resources\templates\visitors" />
       <recent name="C:\Users\UX503030\IdeaProjects\SetMentoringProgram\libraryProject\src\test\resources" />
       <recent name="C:\Users\UX503030\IdeaProjects\SetMentoringProgram\libraryProject\src\main\resources" />
       <recent name="C:\Users\UX503030\IdeaProjects\SetMentoringProgram\libraryProject\sql" />
@@ -110,7 +132,20 @@
       <recent name="epam.com.setMentoringProgram.libraryProject.utils.validators" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BooksControllerTest">
+  <component name="RunManager" selected="Spring Boot.LibraryProjectApplication">
+    <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.utils.validators.DateUtils" />
+      <module name="libraryProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="epam.com.setMentoringProgram.libraryProject.utils.validators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in libraryProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -119,22 +154,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BooksControllerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libraryProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="epam.com.setMentoringProgram.libraryProject.unitTests.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="epam.com.setMentoringProgram.libraryProject.unitTests.controllers" />
-      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.unitTests.controllers.BooksControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BooksControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BooksControllerTest.assignBookToVisitorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryProject" />
       <extension name="coverage">
         <pattern>
@@ -144,12 +164,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="epam.com.setMentoringProgram.libraryProject.integrationTests" />
       <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.integrationTests.BooksControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="assignBookToVisitorTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VisitorsControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BooksControllerTest.getBooksViaPaginationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryProject" />
       <extension name="coverage">
         <pattern>
@@ -158,23 +179,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="epam.com.setMentoringProgram.libraryProject.integrationTests" />
-      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.integrationTests.VisitorsControllerIntegrationTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.integrationTests.BooksControllerTest" />
+      <option name="METHOD_NAME" value="getBooksViaPaginationTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VisitorsControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="epam.com.setMentoringProgram.libraryProject in libraryProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="epam.com.setMentoringProgram.libraryProject.unitTests.controllers.*" />
+          <option name="PATTERN" value="epam.com.setMentoringProgram.libraryProject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="epam.com.setMentoringProgram.libraryProject.unitTests.controllers" />
-      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.unitTests.controllers.VisitorsControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="epam.com.setMentoringProgram.libraryProject" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BooksControllerTest" />
         <item itemvalue="JUnit.All in libraryProject" />
-        <item itemvalue="JUnit.VisitorsControllerTest" />
-        <item itemvalue="JUnit.VisitorsControllerIntegrationTest" />
-        <item itemvalue="JUnit.BooksControllerTest (1)" />
+        <item itemvalue="JUnit.BooksControllerTest.assignBookToVisitorTest" />
+        <item itemvalue="Application.DateUtils" />
+        <item itemvalue="JUnit.epam.com.setMentoringProgram.libraryProject in libraryProject" />
+        <item itemvalue="JUnit.BooksControllerTest.getBooksViaPaginationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -220,6 +241,14 @@
       <workItem from="1664908515975" duration="11370000" />
       <workItem from="1665232148582" duration="16541000" />
       <workItem from="1665267756387" duration="99372000" />
+      <workItem from="1666036006635" duration="15759000" />
+      <workItem from="1666209334441" duration="2599000" />
+      <workItem from="1666212028313" duration="1094000" />
+      <workItem from="1666213184129" duration="8521000" />
+      <workItem from="1666298412195" duration="12013000" />
+      <workItem from="1666450730791" duration="2264000" />
+      <workItem from="1666470991878" duration="4601000" />
+      <workItem from="1666478219759" duration="25967000" />
     </task>
     <task id="LOCAL-00001" summary="Library project first commit and push">
       <created>1664548777822</created>
@@ -298,7 +327,7 @@
           <option name="timeStamp" value="303" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/BooksController.java</url>
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/ApiBooksController.java</url>
           <line>32</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
@@ -306,7 +335,7 @@
           <option name="timeStamp" value="377" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/BooksController.java</url>
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/ApiBooksController.java</url>
           <line>48</line>
           <option name="timeStamp" value="379" />
         </line-breakpoint>
@@ -342,46 +371,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
-          <line>27</line>
+          <line>33</line>
           <option name="timeStamp" value="718" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/VisitorService.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="719" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/VisitorService.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="720" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/VisitorService.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="721" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/VisitorsController.java</url>
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/ApiVisitorsController.java</url>
           <line>62</line>
           <option name="timeStamp" value="722" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/VisitorsController.java</url>
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/ApiVisitorsController.java</url>
           <line>63</line>
           <option name="timeStamp" value="723" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/VisitorsController.java</url>
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/ApiVisitorsController.java</url>
           <line>42</line>
           <option name="timeStamp" value="727" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/VisitorsController.java</url>
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/ApiVisitorsController.java</url>
           <line>37</line>
           <option name="timeStamp" value="734" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/BooksController.java</url>
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/ApiBooksController.java</url>
           <line>38</line>
           <option name="timeStamp" value="742" />
         </line-breakpoint>
@@ -431,7 +445,7 @@
           <option name="timeStamp" value="774" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/BooksController.java</url>
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/ApiBooksController.java</url>
           <line>43</line>
           <option name="timeStamp" value="783" />
         </line-breakpoint>
@@ -459,6 +473,236 @@
           <url>file://$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/unitTests/controllers/VisitorsControllerTest.java</url>
           <line>122</line>
           <option name="timeStamp" value="808" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/customDeSerializers/VisitorDateOfBirthDeSerializer.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="821" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="871" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>70</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="872" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/services/BookService.java</url>
+          <line>69</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="873" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/BaseApiController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="882" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/BaseApiController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="883" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/BaseApiController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="884" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/BaseApiController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="885" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/BaseApiController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="886" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="931" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="932" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>61</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="933" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="935" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="936" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="937" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="938" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="940" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="941" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="942" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="943" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="944" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="945" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="946" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="947" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="948" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="949" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="950" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="951" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="952" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="953" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java</url>
+          <line>62</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="954" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="955" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="956" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="957" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="959" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="961" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="963" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="964" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="984" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="985" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/DateUtils.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="986" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="994" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>67</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="996" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

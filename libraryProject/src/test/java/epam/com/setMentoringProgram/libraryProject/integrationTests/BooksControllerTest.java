@@ -10,8 +10,6 @@ import epam.com.setMentoringProgram.libraryProject.repositories.VisitorRepositor
 import epam.com.setMentoringProgram.libraryProject.services.BookService;
 import epam.com.setMentoringProgram.libraryProject.utils.exceptions.EntityNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayNameGeneration;
-import org.junit.jupiter.api.DisplayNameGenerator;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -143,7 +141,7 @@ class BooksControllerTest extends BaseBookAbstractTest {
                 .orElseThrow(() -> new IllegalStateException("Something's come up during getting books from h2 DB")).getId();
 
         Book newBookForUpdating = new Book().setName("Thinking in Java").setAuthor("Bruce Eckel")
-                .setYearOfWriting(getDateBySpecificFormat(BOOK_DATE_VALUES.getDateCreatingPattern(), "2013"));
+                .setYearOfWriting(getDateBySpecificFormat(BOOK_DATE_VALUES, "2013"));
 
         mockMvc.perform(MockMvcRequestBuilders
                         .put(getLinkForUpdatingBook(bookIdThatIsGonnaBeUpdated))
@@ -203,12 +201,12 @@ class BooksControllerTest extends BaseBookAbstractTest {
         int visitorAge = 23;
         String visitorInitials = "William Jefferson Clinton";
         String visitorEmail = "clinton@gmail.com";
-        Date visitorDateOfBirth = getDateBySpecificFormat(VISITOR_DATE_VALUES.getDateCreatingPattern(), "21-09-1994");
+        Date visitorDateOfBirth = getDateBySpecificFormat(VISITOR_DATE_VALUES, "21-09-1994");
         Visitor visitor = new Visitor().setAge(visitorAge).setInitials(visitorInitials).setEmail(visitorEmail).setDateOfBirth(visitorDateOfBirth);
 
         String bookName = "Just book";
         String bookAuthor = "Just Author";
-        Date bookYearOfWriting = getDateBySpecificFormat(BOOK_DATE_VALUES.getDateCreatingPattern(), "2013");
+        Date bookYearOfWriting = getDateBySpecificFormat(BOOK_DATE_VALUES, "2013");
         BookDto bookDto = new BookDto().setName(bookName).setAuthor(bookAuthor).setYearOfWriting(bookYearOfWriting);
 
         visitorRepository.save(visitor);

@@ -1,4 +1,4 @@
-package epam.com.setMentoringProgram.libraryProject.controllers;
+package epam.com.setMentoringProgram.libraryProject.controllers.api;
 
 import epam.com.setMentoringProgram.libraryProject.dto.VisitorDto;
 import epam.com.setMentoringProgram.libraryProject.utils.exceptions.EntityErrorResponse;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import java.sql.Timestamp;
 import java.util.List;
 
-public abstract class BaseController {
+public abstract class BaseApiController {
 
     @ExceptionHandler
     private ResponseEntity<EntityErrorResponse> handleEntityNotFoundException(EntityNotFoundException exception) {

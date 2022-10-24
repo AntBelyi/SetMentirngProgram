@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create book</title>
+</head>
+<body>
+
+<form th:method="PUT" th:action="@{/ui/books/update/{id}(id=${bookById.getId()})}" th:object="${bookById}">
+    <label for="name">Enter book name: </label>
+    <input type="text" th:field="*{name}" id="name"/>
+    <div style="color: brown" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name error</div>
+    <br/>
+    <label for="author">Enter author: </label>
+    <input type="text" th:field="*{author}" id="author">
+    <div style="color: brown" th:if="${#fields.hasErrors('author')}" th:errors="*{author}">Author name error</div>
+    <br/>
+    <label for="yearOfWriting">Enter year of writing: </label>
+    <input type="text" th:field="*{yearOfWriting}" id="yearOfWriting"/>
+    <div style="color: brown" th:if="${dateError != null}" th:text="${dateError}">Year of writing error</div>
+    <br/>
+    <br/>
+    <input type="submit" value="Update book!"/>
+</form>
+
+</body>
+</html>

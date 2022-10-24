@@ -11,7 +11,7 @@ import static epam.com.setMentoringProgram.libraryProject.utils.validators.DateU
 
 public abstract class BaseVisitorAbstractTest extends BaseTest {
 
-    private static final String PATH_TO_VISITORS_CONTROLLER = "/visitors";
+    private static final String PATH_TO_VISITORS_CONTROLLER = "/api/visitors";
 
     protected static List<Visitor> initVisitorList;
     protected static Visitor steveVisitor;
@@ -21,13 +21,13 @@ public abstract class BaseVisitorAbstractTest extends BaseTest {
     protected static final int STEVE_AGE = 43;
     protected static final String STEVE_INITIALS = "Steven Paul Jobs";
     protected static final String STEVE_EMAIL = "steveJobs@gmail.com";
-    protected static final Date STEVE_DATE_OF_BIRTH = getDateBySpecificFormat(VISITOR_DATE_VALUES.getDateCreatingPattern(), "22-03-1987");
+    protected static final Date STEVE_DATE_OF_BIRTH = getDateBySpecificFormat(VISITOR_DATE_VALUES, "22-03-1987");
 
     protected static final int WILLIAM_ID = 9;
     protected static final int WILLIAM_AGE = 57;
     protected static final String WILLIAM_INITIALS = "William Clay Ford";
     protected static final String WILLIAM_EMAIL = "williamFord@gmail.com";
-    protected static final Date WILLIAM_DATE_OF_BIRTH = getDateBySpecificFormat(VISITOR_DATE_VALUES.getDateCreatingPattern(), "17-06-1937");
+    protected static final Date WILLIAM_DATE_OF_BIRTH = getDateBySpecificFormat(VISITOR_DATE_VALUES, "17-06-1937");
 
     @BeforeAll
     public static void setUp() {
