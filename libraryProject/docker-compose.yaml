@@ -1,15 +1,24 @@
 version: '3.5'
 
 services:
+  library_app:
+    image: library-springboot-app
+    container_name: library_app
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=library_db
+      - DB_PORT=5432
+      - DB_PASSWORD=mypassword
+      - DB_USER_NAME=myusername
+
   db_library:
-    container_name: db_library
+    image: postgres:11.4
+    container_name: library_db
     ports:
       - "5432:5432"
     environment:
       - POSTGRES_DB=library
       - POSTGRES_PASSWORD=mypassword
       - POSTGRES_USER=myusername
-    volumes:
-      - ./sql/dataTables.sql:/docker-entrypoint-initdb.d/dataTables.sql
-    image: postgres:11.4
-
