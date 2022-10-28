@@ -2,9 +2,9 @@ version: '3.5'
 
 services:
   library_app:
-    image: library-springboot-app
+    image: 1234123572/library-springboot-app
     container_name: library_app
-    build: .
+    restart: always
     ports:
       - "8080:8080"
     environment:

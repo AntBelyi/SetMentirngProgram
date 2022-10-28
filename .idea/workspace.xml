@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="First part of code for docker-compose implementation">
-      <change afterPath="$PROJECT_DIR$/libraryProject/Dockerfile" afterDir="false" />
+    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryProject/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/sql/dataTables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/resources/application-integration-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/test/resources/application-integration-test.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665532510842</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="First part of code for docker-compose implementation">
+      <created>1666904820173</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666904820173</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +252,8 @@
     <MESSAGE value="Create &quot;docker-compose.yaml&quot; file for up db automatically&#10;Add discription in &quot;README.md&quot; file" />
     <MESSAGE value="Changes related to comments" />
     <MESSAGE value="Cover services and controllers by unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cover services and controllers by unit tests" />
+    <MESSAGE value="First part of code for docker-compose implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="First part of code for docker-compose implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
