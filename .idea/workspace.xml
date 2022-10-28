@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/LibraryProject.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/LibraryProject.postman_collection.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666904820173</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="change yaml file a bit to be able to pull &quot;1234123572/library-springboot-app&quot; image from docker repository">
+      <created>1666954843443</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666954843443</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +259,8 @@
     <MESSAGE value="Changes related to comments" />
     <MESSAGE value="Cover services and controllers by unit tests" />
     <MESSAGE value="First part of code for docker-compose implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="First part of code for docker-compose implementation" />
+    <MESSAGE value="change yaml file a bit to be able to pull &quot;1234123572/library-springboot-app&quot; image from docker repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="change yaml file a bit to be able to pull &quot;1234123572/library-springboot-app&quot; image from docker repository" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

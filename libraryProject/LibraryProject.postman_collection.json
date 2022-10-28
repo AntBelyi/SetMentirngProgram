@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "3704ee98-7028-4cf8-9366-b49c9f643af7",
+		"_postman_id": "0885da92-3667-48d6-b278-2c5dcccee097",
 		"name": "LibraryProject",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "12904830"
@@ -15,12 +15,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9393/visitors",
+							"raw": "http://localhost:8080/visitors",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9393",
+							"port": "8080",
 							"path": [
 								"visitors"
 							]
@@ -34,12 +34,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9393/visitors/3",
+							"raw": "http://localhost:8080/visitors/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9393",
+							"port": "8080",
 							"path": [
 								"visitors",
 								"3"
@@ -63,12 +63,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9393/books/update/3",
+							"raw": "http://localhost:8080/books/update/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9393",
+							"port": "8080",
 							"path": [
 								"books",
 								"update",
@@ -93,12 +93,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9393/visitors/new",
+							"raw": "http://localhost:8080/visitors/new",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9393",
+							"port": "8080",
 							"path": [
 								"visitors",
 								"new"
@@ -113,12 +113,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9393/visitors/delete/6",
+							"raw": "http://localhost:8080/visitors/delete/6",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9393",
+							"port": "8080",
 							"path": [
 								"visitors",
 								"delete",
@@ -139,12 +139,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9393/books",
+							"raw": "http://localhost:8080/books",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9393",
+							"port": "8080",
 							"path": [
 								"books"
 							]
@@ -158,12 +158,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9393/books/2",
+							"raw": "http://localhost:8080/books/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9393",
+							"port": "8080",
 							"path": [
 								"books",
 								"2"
@@ -187,12 +187,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9393/books/new",
+							"raw": "http://localhost:8080/books/new",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9393",
+							"port": "8080",
 							"path": [
 								"books",
 								"new"
@@ -216,12 +216,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9393/books/update/3",
+							"raw": "http://localhost:8080/books/update/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9393",
+							"port": "8080",
 							"path": [
 								"books",
 								"update",
@@ -237,12 +237,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9393/books/delete/3",
+							"raw": "http://localhost:8080/books/delete/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9393",
+							"port": "8080",
 							"path": [
 								"books",
 								"delete",
@@ -267,12 +267,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9393/books/assign/3",
+							"raw": "http://localhost:8080/books/assign/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9393",
+							"port": "8080",
 							"path": [
 								"books",
 								"assign",
@@ -288,12 +288,12 @@
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9393/books/handIn/2",
+							"raw": "http://localhost:8080/books/handIn/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9393",
+							"port": "8080",
 							"path": [
 								"books",
 								"handIn",
