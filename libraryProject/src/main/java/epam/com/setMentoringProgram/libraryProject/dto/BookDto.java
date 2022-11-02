@@ -1,16 +1,21 @@
 package epam.com.setMentoringProgram.libraryProject.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import epam.com.setMentoringProgram.libraryProject.models.Visitor;
 import epam.com.setMentoringProgram.libraryProject.utils.customDeSerializers.BookYearOfWritingDeSerializer;
 import lombok.Data;
 import lombok.experimental.Accessors;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.Pattern;
 import java.util.Date;
 import java.util.Objects;
+
+import static epam.com.setMentoringProgram.libraryProject.enums.DateFormattingValues.BOOK_DATE_VALUES;
+import static epam.com.setMentoringProgram.libraryProject.utils.validators.DateUtils.getDateBySpecificFormatAsString;
 
 @Data
 @Accessors(chain = true)
@@ -25,6 +30,7 @@ public class BookDto {
     @Pattern(regexp = "[A-Z][a-z]{2,15} [A-Z][a-z]{2,15}", message = "Enter author name in such format, please: <Taras Shevchenko>")
     private String author;
 
+    @DateTimeFormat(pattern = "yyyy")
     @JsonDeserialize(using = BookYearOfWritingDeSerializer.class)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy", timezone = "Europe/Kiev")
     private Date yearOfWriting;
@@ -46,4 +52,10 @@ public class BookDto {
                           .setDateOfBirth(whoRead.getDateOfBirth());
         }
     }
+
+    @JsonIgnore
+    public String getBookInformation() {
+        return name + ", " + author + ", " + getDateBySpecificFormatAsString(BOOK_DATE_VALUES.getDateCreatingPattern(), yearOfWriting);
+    }
+
 }

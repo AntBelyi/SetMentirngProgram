@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Show all visitors</title>
+    <meta charset="utf-8"  />
+</head>
+
+<body>
+
+<div th:each="visitor : ${visitors}">
+    <a th:href="@{/ui/visitors/{id}(id=${visitor.getId()})}" th:text="${visitor.getInitials()}">VALUE</a>
+</div>
+
+<hr/>
+<form th:method="GET" th:action="@{/ui/visitors/new}">
+    <input type="submit" value="Add visitor"/>
+</form>
+
+</body>
+
+</html>

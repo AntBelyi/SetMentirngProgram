@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update visitor</title>
+</head>
+<body>
+
+<h1>Update visitor: </h1>
+
+<form th:method="PUT" th:action="@{/ui/visitors/{id}(id=${visitorById.getId()})}" th:object="${visitorById}">
+    <label for="initials">Enter initials: </label>
+    <input type="text" th:field="*{initials}" id="initials">
+    <div style="color: brown" th:if="${#fields.hasErrors('initials')}" th:errors="*{initials}">Initials error</div>
+    <br/>
+    <label for="age">Enter age: </label>
+    <input type="text" th:field="*{age}" id="age">
+    <div style="color: brown" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age error</div>
+    <br/>
+    <label for="email">Enter email: </label>
+    <input type="text" th:field="*{email}" id="email">
+    <div style="color: brown" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email error</div>
+    <br/>
+    <label for="dateOfBirth">Enter date of birth: </label>
+    <input type="text" th:field="*{dateOfBirth}" id="dateOfBirth">
+    <div style="color: brown" th:if="${dateError != null}" th:text="${dateError}">Date error</div>
+    <br/>
+    <br/>
+    <input type="submit" value="Update visitor">
+</form>
+
+</body>
+</html>

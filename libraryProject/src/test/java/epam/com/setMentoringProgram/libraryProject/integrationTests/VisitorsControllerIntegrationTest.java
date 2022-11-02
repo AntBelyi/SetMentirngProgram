@@ -5,8 +5,6 @@ import epam.com.setMentoringProgram.libraryProject.models.Visitor;
 import epam.com.setMentoringProgram.libraryProject.repositories.VisitorRepository;
 import epam.com.setMentoringProgram.libraryProject.utils.exceptions.EntityNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayNameGeneration;
-import org.junit.jupiter.api.DisplayNameGenerator;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -29,10 +27,10 @@ import static epam.com.setMentoringProgram.libraryProject.utils.validators.DateU
 import static epam.com.setMentoringProgram.libraryProject.utils.validators.DateUtils.getDateBySpecificFormatAsString;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.is;
 import static org.springframework.test.context.jdbc.Sql.ExecutionPhase.AFTER_TEST_METHOD;
 import static org.springframework.test.context.jdbc.Sql.ExecutionPhase.BEFORE_TEST_METHOD;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @SpringBootTest
@@ -130,7 +128,7 @@ class VisitorsControllerIntegrationTest extends BaseVisitorAbstractTest {
                 .orElseThrow(() -> new IllegalStateException("Something's come up during getting visitors from h2 DB")).getId();
 
         Visitor newVisitorForUpdating = new Visitor().setInitials("Norma Jeane Morten").setAge(57).setEmail("merlinMonro@gmail.com")
-                .setDateOfBirth(getDateBySpecificFormat(VISITOR_DATE_VALUES.getDateCreatingPattern(), "17-06-1965"));
+                .setDateOfBirth(getDateBySpecificFormat(VISITOR_DATE_VALUES, "17-06-1965"));
 
         mockMvc.perform(MockMvcRequestBuilders
                         .put(getLinkForUpdatingVisitor(visitorIdThatIsGonnaBeUpdated))
