@@ -33,7 +33,7 @@ class VisitorValidatorTest extends BaseValidatorTestClass {
 
     private static final VisitorDto VISITOR_DTO = mock(VisitorDto.class);
     private static final String VISITOR_INITIALS = "Franko Ivan Yakovlevich";
-    private static final Date DATE_OF_BIRTH = getDateBySpecificFormat(VISITOR_DATE_VALUES.getDateCreatingPattern(), "17-01-1997");
+    private static final Date DATE_OF_BIRTH = getDateBySpecificFormat(VISITOR_DATE_VALUES, "17-01-1997");
 
     @BeforeAll
     public static void setUp() {

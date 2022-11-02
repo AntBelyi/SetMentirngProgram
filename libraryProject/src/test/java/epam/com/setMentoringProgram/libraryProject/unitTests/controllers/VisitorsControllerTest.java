@@ -1,7 +1,7 @@
 package epam.com.setMentoringProgram.libraryProject.unitTests.controllers;
 
 import epam.com.setMentoringProgram.libraryProject.BaseVisitorAbstractTest;
-import epam.com.setMentoringProgram.libraryProject.controllers.VisitorsController;
+import epam.com.setMentoringProgram.libraryProject.controllers.api.ApiVisitorsController;
 import epam.com.setMentoringProgram.libraryProject.dto.VisitorDto;
 import epam.com.setMentoringProgram.libraryProject.models.Visitor;
 import epam.com.setMentoringProgram.libraryProject.services.VisitorService;
@@ -35,7 +35,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(SpringExtension.class)
-@WebMvcTest(VisitorsController.class)
+@WebMvcTest(ApiVisitorsController.class)
 class VisitorsControllerTest extends BaseVisitorAbstractTest {
 
     @MockBean
@@ -132,7 +132,7 @@ class VisitorsControllerTest extends BaseVisitorAbstractTest {
     @Test
     void updateVisitor() throws Exception {
         VisitorDto updatedVisitorDto = new VisitorDto().setAge(35).setInitials("William Jefferson Clinton").setEmail("clinton@gmail.com")
-                        .setDateOfBirth(getDateBySpecificFormat(VISITOR_DATE_VALUES.getDateCreatingPattern(), "23-06-2020"));
+                        .setDateOfBirth(getDateBySpecificFormat(VISITOR_DATE_VALUES, "23-06-2020"));
 
         when(visitorService.updatedVisitor(STEVE_ID, updatedVisitorDto)).thenReturn(steveVisitorDto);
 

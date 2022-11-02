@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Show visitor by id</title>
+</head>
+<body>
+
+<h1>Visitor page</h1>
+
+<p th:text="${visitor.getVisitorInformation()}">VALUE</p>
+
+<div th:if="${visitor.getBooks().isEmpty()}">
+    <p>Visitor isn't assigned to any book yet</p>
+</div>
+
+<div th:if="${!visitor.getBooks().isEmpty()}">
+    <h3>Books:</h3>
+    <div th:each="book : ${visitor.getBooks()}">
+        <p th:text="${book.getName()}">VALUE</p>
+    </div>
+</div>
+
+<hr/>
+
+<form th:method="GET" th:action="@{/ui/visitors/update/{id}(id=${visitor.getId()})}">
+    <input type="submit" value="Edit visitor">
+</form>
+<br/>
+<form th:method="DELETE" th:action="@{/ui/visitors/delete/{id}(id=${visitor.getId()})}">
+    <input type="submit" value="Delete visitor">
+</form>
+
+</body>
+</html>

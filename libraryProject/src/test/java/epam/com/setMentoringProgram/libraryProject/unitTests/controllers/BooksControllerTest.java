@@ -1,7 +1,7 @@
 package epam.com.setMentoringProgram.libraryProject.unitTests.controllers;
 
 import epam.com.setMentoringProgram.libraryProject.BaseBookAbstractTest;
-import epam.com.setMentoringProgram.libraryProject.controllers.BooksController;
+import epam.com.setMentoringProgram.libraryProject.controllers.api.ApiBooksController;
 import epam.com.setMentoringProgram.libraryProject.dto.BookDto;
 import epam.com.setMentoringProgram.libraryProject.dto.VisitorDto;
 import epam.com.setMentoringProgram.libraryProject.models.Book;
@@ -37,7 +37,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @ExtendWith(SpringExtension.class)
-@WebMvcTest(BooksController.class)
+@WebMvcTest(ApiBooksController.class)
 class BooksControllerTest extends BaseBookAbstractTest {
 
     @MockBean
@@ -133,7 +133,7 @@ class BooksControllerTest extends BaseBookAbstractTest {
     @Test
     void updateBook() throws Exception {
         BookDto updatedBookDto = new BookDto().setName("Python").setAuthor("Just Author")
-                .setYearOfWriting(getDateBySpecificFormat(BOOK_DATE_VALUES.getDateCreatingPattern(), "2005"));
+                .setYearOfWriting(getDateBySpecificFormat(BOOK_DATE_VALUES, "2005"));
         when(bookService.updateBook(CLEAN_CODE_BOOK_ID, updatedBookDto)).thenReturn(cleanCodeBookDto);
 
         mockMvc.perform(MockMvcRequestBuilders
@@ -155,9 +155,9 @@ class BooksControllerTest extends BaseBookAbstractTest {
         int visitorWhoReadId = 2;
         Visitor visitorFromDbById = new Visitor().setId(visitorWhoReadId).setAge(27)
                 .setInitials("William Jefferson Clinton").setEmail("clinton@gmail.com")
-                .setDateOfBirth(getDateBySpecificFormat(VISITOR_DATE_VALUES.getDateCreatingPattern(), "23-06-2020"));
+                .setDateOfBirth(getDateBySpecificFormat(VISITOR_DATE_VALUES, "23-06-2020"));
         BookDto bookIsGonnaBeAssigned = new BookDto().setId(3).setName("Python").setAuthor("Just Author")
-                .setYearOfWriting(getDateBySpecificFormat(BOOK_DATE_VALUES.getDateCreatingPattern(), "2005"));
+                .setYearOfWriting(getDateBySpecificFormat(BOOK_DATE_VALUES, "2005"));
         bookIsGonnaBeAssigned.setWhoRead(visitorFromDbById);
 
         when(bookService.assignBookToVisitor(JAVA_BOOK_ID, visitorWhoReadId, BookDto.class))

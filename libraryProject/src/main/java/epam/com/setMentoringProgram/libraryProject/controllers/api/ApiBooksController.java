@@ -1,4 +1,4 @@
-package epam.com.setMentoringProgram.libraryProject.controllers;
+package epam.com.setMentoringProgram.libraryProject.controllers.api;
 
 import epam.com.setMentoringProgram.libraryProject.dto.BookDto;
 import epam.com.setMentoringProgram.libraryProject.dto.VisitorDto;
@@ -16,14 +16,14 @@ import java.util.List;
 import static epam.com.setMentoringProgram.libraryProject.utils.validators.ConverterUtils.convertToEntity;
 
 @RestController
-@RequestMapping("/books")
-public class BooksController extends BaseController {
+@RequestMapping("/api/books")
+public class ApiBooksController extends BaseApiController {
 
     private final BookService bookService;
     private final BookValidator bookValidator;
 
     @Autowired
-    public BooksController(BookService bookService, BookValidator bookValidator) {
+    public ApiBooksController(BookService bookService, BookValidator bookValidator) {
         this.bookService = bookService;
         this.bookValidator = bookValidator;
     }
