@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/libraryProject/LibraryProject.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/LibraryProject.postman_collection.json" afterDir="false" />
+    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="change yaml file a bit to be able to pull &quot;1234123572/library-springboot-app&quot; image from docker repository">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,10 +171,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.libraryProject/docker-compose.yaml.db_library: Compose Deployment" />
-        <item itemvalue="JUnit.BooksControllerTest" />
         <item itemvalue="JUnit.All in libraryProject" />
-        <item itemvalue="JUnit.VisitorsControllerTest" />
-        <item itemvalue="JUnit.VisitorsControllerIntegrationTest" />
+        <item itemvalue="JUnit.BooksControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -348,7 +346,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
-          <line>33</line>
+          <line>52</line>
           <option name="timeStamp" value="718" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -375,11 +373,6 @@
           <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/ApiBooksController.java</url>
           <line>38</line>
           <option name="timeStamp" value="742" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/BooksController.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="783" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
