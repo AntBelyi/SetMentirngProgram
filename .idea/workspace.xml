@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="change yaml file a bit to be able to pull &quot;1234123572/library-springboot-app&quot; image from docker repository">
+    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/enums/ValidationMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/enums/ValidationMessages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +75,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../qa-platform" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
@@ -93,7 +96,7 @@
       <recent name="epam.com.setMentoringProgram.libraryProject.utils.validators" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.libraryProject/docker-compose.yaml.db_library: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.LibraryProjectApplication">
     <configuration name="All in libraryProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -208,6 +211,7 @@
       <workItem from="1666450730791" duration="2264000" />
       <workItem from="1666470991878" duration="4601000" />
       <workItem from="1666478219759" duration="25967000" />
+      <workItem from="1667574170028" duration="3860000" />
     </task>
     <task id="LOCAL-00001" summary="Library project first commit and push">
       <created>1664548777822</created>
@@ -258,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666954843443</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="merge &quot;main&quot; into current branch">
+      <created>1667407917166</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667407917166</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +282,8 @@
     <MESSAGE value="Cover services and controllers by unit tests" />
     <MESSAGE value="First part of code for docker-compose implementation" />
     <MESSAGE value="change yaml file a bit to be able to pull &quot;1234123572/library-springboot-app&quot; image from docker repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="change yaml file a bit to be able to pull &quot;1234123572/library-springboot-app&quot; image from docker repository" />
+    <MESSAGE value="merge &quot;main&quot; into current branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge &quot;main&quot; into current branch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -373,6 +385,124 @@
           <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/api/ApiBooksController.java</url>
           <line>38</line>
           <option name="timeStamp" value="742" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/UiVisitorsController.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="743" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/UiVisitorsController.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="744" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/UiVisitorsController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="745" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/UiVisitorsController.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="746" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/UiVisitorsController.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="747" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/BaseUiController.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="748" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/BaseUiController.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="749" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/BaseUiController.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="750" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/BaseUiController.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="751" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/BaseUiController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="752" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/BaseUiController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="753" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/BaseUiController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="754" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/BaseUiController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="755" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="756" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="757" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="758" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>61</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="759" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="760" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="761" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="762" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="765" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="766" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="767" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
