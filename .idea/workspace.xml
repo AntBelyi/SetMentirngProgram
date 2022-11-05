@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/enums/ValidationMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/enums/ValidationMessages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/BookValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java" afterDir="false" />
-    </list>
+    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +206,7 @@
       <workItem from="1666450730791" duration="2264000" />
       <workItem from="1666470991878" duration="4601000" />
       <workItem from="1666478219759" duration="25967000" />
-      <workItem from="1667574170028" duration="3860000" />
+      <workItem from="1667574170028" duration="4209000" />
     </task>
     <task id="LOCAL-00001" summary="Library project first commit and push">
       <created>1664548777822</created>
@@ -269,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667407917166</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fix DateOfBirth NullPointer error">
+      <created>1667636366049</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667636366049</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +285,8 @@
     <MESSAGE value="First part of code for docker-compose implementation" />
     <MESSAGE value="change yaml file a bit to be able to pull &quot;1234123572/library-springboot-app&quot; image from docker repository" />
     <MESSAGE value="merge &quot;main&quot; into current branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge &quot;main&quot; into current branch" />
+    <MESSAGE value="Fix DateOfBirth NullPointer error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix DateOfBirth NullPointer error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
