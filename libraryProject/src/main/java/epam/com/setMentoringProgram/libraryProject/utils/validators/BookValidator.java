@@ -38,7 +38,7 @@ public class BookValidator implements Validator {
     public void validate(Object target, Errors errors) {
         Book book = convertToEntity(target, Book.class);
         Book bookFromDB = bookService.getBookByNameAndAuthorAndYearOfWriting(book.getName(), book.getAuthor(), book.getYearOfWriting());
-        if(Objects.nonNull(bookFromDB)) {
+        if (Objects.nonNull(bookFromDB)) {
             throw new EntityValidationException(BOOK_IS_ALREADY_EXIST.getErrorMessage());
         }
     }
@@ -51,7 +51,7 @@ public class BookValidator implements Validator {
     private void bookUniqueValidation(Object target, Errors errors, Model model) {
         Book book = convertToEntity(target, Book.class);
         Book bookFromDB = bookService.getBookByNameAndAuthorAndYearOfWriting(book.getName(), book.getAuthor(), book.getYearOfWriting());
-        if(Objects.nonNull(bookFromDB)) {
+        if (Objects.nonNull(bookFromDB)) {
             errors.rejectValue("name", "", BOOK_IS_ALREADY_EXIST.getErrorMessage());
             errors.rejectValue("author", "", BOOK_IS_ALREADY_EXIST.getErrorMessage());
             model.addAttribute("dateError", BOOK_IS_ALREADY_EXIST.getErrorMessage());
@@ -63,10 +63,12 @@ public class BookValidator implements Validator {
         Optional<FieldError> fieldError = errors.getFieldErrors().stream().filter(fieldEr -> fieldEr.getField()
                 .equals("yearOfWriting")).findFirst();
         try {
-            if(Objects.nonNull(book.getYearOfWriting())) {
+            if (Objects.nonNull(book.getYearOfWriting())) {
                 validateDateRanges(book.getYearOfWriting(), BOOK_DATE_VALUES, BOOK_YEAR_OF_WRITING_CANT_BE_GREATER_THAN_1000, BOOK_YEAR_OF_WRITING_CANT_BE_LATER_THAN_CURRENT_DATE);
+            } else if (fieldError.isPresent()) {
+                validateDate(String.valueOf(fieldError.get().getRejectedValue()), BOOK_DATE_VALUES, BOOK_YEAR_OF_WRITING_CANT_BE_GREATER_THAN_1000, BOOK_YEAR_OF_WRITING_CANT_BE_LATER_THAN_CURRENT_DATE);
             } else {
-                fieldError.ifPresent(error -> validateDate(String.valueOf(error.getRejectedValue()), BOOK_DATE_VALUES, BOOK_YEAR_OF_WRITING_CANT_BE_GREATER_THAN_1000, BOOK_YEAR_OF_WRITING_CANT_BE_LATER_THAN_CURRENT_DATE));
+                model.addAttribute("dateError", BOOK_YEAR_OF_WRITING_CANT_BE_EMPTY.getErrorMessage());
             }
         } catch (EntityValidationException ex) {
             model.addAttribute("dateError", ex.getMessage());

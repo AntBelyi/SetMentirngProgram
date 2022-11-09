@@ -38,7 +38,7 @@ public class VisitorValidator implements Validator {
     public void validate(Object target, Errors errors) {
         Visitor visitor = convertToEntity(target, Visitor.class);
         Visitor visitorFromDB = visitorService.getVisitorByInitialsAndDateOfBirth(visitor.getInitials(), visitor.getDateOfBirth());
-        if(Objects.nonNull(visitorFromDB)) {
+        if (Objects.nonNull(visitorFromDB)) {
             throw new EntityValidationException(VISITOR_IS_ALREADY_REGISTERED.getErrorMessage());
         }
     }
@@ -51,7 +51,7 @@ public class VisitorValidator implements Validator {
     private void userUniqueValidation(Object target, Errors errors, Model model) {
         Visitor visitor = convertToEntity(target, Visitor.class);
         Visitor visitorFromDB = visitorService.getVisitorByInitialsAndDateOfBirth(visitor.getInitials(), visitor.getDateOfBirth());
-        if(Objects.nonNull(visitorFromDB)) {
+        if (Objects.nonNull(visitorFromDB)) {
             errors.rejectValue("initials", "", VISITOR_IS_ALREADY_REGISTERED.getErrorMessage());
             model.addAttribute("dateError", VISITOR_IS_ALREADY_REGISTERED.getErrorMessage());
         }
@@ -62,10 +62,12 @@ public class VisitorValidator implements Validator {
         Optional<FieldError> fieldError = errors.getFieldErrors().stream().filter(fieldEr -> fieldEr.getField()
                 .equals("dateOfBirth")).findFirst();
         try {
-            if(Objects.nonNull(visitor.getDateOfBirth())) {
+            if (Objects.nonNull(visitor.getDateOfBirth())) {
                 validateDateRanges(visitor.getDateOfBirth(), VISITOR_DATE_VALUES, DATE_OF_BIRTH_CANT_BE_EARLIER_THAN, DATE_OF_BIRTH_CANT_BE_LATER_THAN_CURRENT_DATE);
+            } else if (fieldError.isPresent()) {
+                validateDate(String.valueOf(fieldError.get().getRejectedValue()), VISITOR_DATE_VALUES, DATE_OF_BIRTH_CANT_BE_EARLIER_THAN, DATE_OF_BIRTH_CANT_BE_LATER_THAN_CURRENT_DATE);
             } else {
-                fieldError.ifPresent(error -> validateDate(String.valueOf(error.getRejectedValue()), VISITOR_DATE_VALUES, DATE_OF_BIRTH_CANT_BE_EARLIER_THAN, DATE_OF_BIRTH_CANT_BE_LATER_THAN_CURRENT_DATE));
+                model.addAttribute("dateError", DATE_OF_BIRTH_CANT_BE_EMPTY.getErrorMessage());
             }
         } catch (EntityValidationException ex) {
             model.addAttribute("dateError", ex.getMessage());
