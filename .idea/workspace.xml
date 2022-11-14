@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/WelcomePageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraryProject/src/main/resources/templates/welcome/welcomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/LibraryProject.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/LibraryProject.postman_collection.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +45,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="enabledProfiles">
-      <list>
-        <option value="aib-remote" />
-      </list>
-    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -191,6 +174,7 @@
       <item itemvalue="JUnit.All in libraryProject" />
       <item itemvalue="JUnit.BooksControllerTest" />
       <item itemvalue="JUnit.epam.com.setMentoringProgram.libraryProject in libraryProject" />
+      <item itemvalue="Spring Boot.LibraryProjectApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -234,6 +218,7 @@
       <workItem from="1666470991878" duration="4601000" />
       <workItem from="1666478219759" duration="25967000" />
       <workItem from="1667574170028" duration="4209000" />
+      <workItem from="1668434534379" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="Library project first commit and push">
       <created>1664548777822</created>
