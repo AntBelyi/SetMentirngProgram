@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome page</title>
+</head>
+<body>
+
+<h1>You are welcome in the library!</h1>
+
+<form th:method="GET" th:action="@{/ui/visitors}">
+    <input type="submit" value="Go to the <Visitors> page">
+</form>
+<br/>
+<form th:method="GET" th:action="@{/ui/books}">
+    <input type="submit" value="Go to the <Books> page">
+</form>
+
+</body>
+</html>
