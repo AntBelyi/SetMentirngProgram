@@ -2,8 +2,7 @@
 	"info": {
 		"_postman_id": "0885da92-3667-48d6-b278-2c5dcccee097",
 		"name": "LibraryProject",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "12904830"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -15,13 +14,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/visitors",
+							"raw": "http://localhost:5000/api/visitors",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "5000",
 							"path": [
+								"api",
 								"visitors"
 							]
 						}
@@ -34,15 +34,16 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/visitors/3",
+							"raw": "http://localhost:5000/api/visitors/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "5000",
 							"path": [
+								"api",
 								"visitors",
-								"3"
+								"2"
 							]
 						}
 					},
@@ -63,13 +64,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/books/update/3",
+							"raw": "http://localhost:5000/api/books/update/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "5000",
 							"path": [
+								"api",
 								"books",
 								"update",
 								"3"
@@ -93,13 +95,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/visitors/new",
+							"raw": "http://localhost:5000/api/visitors/new",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "5000",
 							"path": [
+								"api",
 								"visitors",
 								"new"
 							]
@@ -113,13 +116,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/visitors/delete/6",
+							"raw": "http://localhost:5000/api/visitors/delete/6",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "5000",
 							"path": [
+								"api",
 								"visitors",
 								"delete",
 								"6"
@@ -139,13 +143,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/books",
+							"raw": "http://localhost:5000/api/books",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "5000",
 							"path": [
+								"api",
 								"books"
 							]
 						}
@@ -158,15 +163,16 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/books/2",
+							"raw": "http://localhost:5000/api/books/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "5000",
 							"path": [
+								"api",
 								"books",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -179,7 +185,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Ukraine History\",\r\n    \"author\": \"Bohdan Chmelnytskyi\",\r\n    \"yearOfWriting\": \"9999\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Ukraine History\",\r\n    \"author\": \"Bohdan Chmelnytskyi\",\r\n    \"yearOfWriting\": \"1999\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -187,13 +193,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/books/new",
+							"raw": "http://localhost:5000/api/books/new",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "5000",
 							"path": [
+								"api",
 								"books",
 								"new"
 							]
@@ -216,13 +223,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/books/update/3",
+							"raw": "http://localhost:5000/api/books/update/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "5000",
 							"path": [
+								"api",
 								"books",
 								"update",
 								"3"
@@ -237,13 +245,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/books/delete/3",
+							"raw": "http://localhost:5000/api/books/delete/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "5000",
 							"path": [
+								"api",
 								"books",
 								"delete",
 								"3"
@@ -267,16 +276,17 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/books/assign/3",
+							"raw": "http://localhost:5000/api/books/assign/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "5000",
 							"path": [
+								"api",
 								"books",
 								"assign",
-								"3"
+								"1"
 							]
 						}
 					},
@@ -288,13 +298,14 @@
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/books/handIn/2",
+							"raw": "http://localhost:5000/api/books/handIn/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "5000",
 							"path": [
+								"api",
 								"books",
 								"handIn",
 								"2"

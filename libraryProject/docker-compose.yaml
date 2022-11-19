@@ -6,12 +6,13 @@ services:
     container_name: library_app
     restart: always
     ports:
-      - "8080:8080"
+      - "5000:5000"
     environment:
       - DB_HOST=library_db
       - DB_PORT=5432
       - DB_PASSWORD=mypassword
       - DB_USER_NAME=myusername
+      - LIBRARY_NAME=library
 
   db_library:
     image: postgres:11.4

@@ -4,27 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="" />
+    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraryProject/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/libraryProject/docker-compose.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
-        <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="docker_compose_implementation" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,15 +46,11 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="2F6ih16Ktu6UbnfkfpuyPbrXo1v" />
   <component name="ProjectViewState">
@@ -72,7 +74,10 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -91,7 +96,20 @@
       <recent name="epam.com.setMentoringProgram.libraryProject.utils.validators" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.LibraryProjectApplication">
+  <component name="RunManager" selected="Application.LibraryProjectApplication">
+    <configuration name="LibraryProjectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.LibraryProjectApplication" />
+      <module name="libraryProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="epam.com.setMentoringProgram.libraryProject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in libraryProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryProject" />
       <option name="PACKAGE_NAME" value="" />
@@ -111,22 +129,6 @@
       <option name="PACKAGE_NAME" value="epam.com.setMentoringProgram.libraryProject.integrationTests" />
       <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.integrationTests.BooksControllerTest" />
       <option name="METHOD_NAME" value="assignBookToVisitorTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BooksControllerTest.getBooksViaPaginationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libraryProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="epam.com.setMentoringProgram.libraryProject.integrationTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="epam.com.setMentoringProgram.libraryProject.integrationTests" />
-      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.integrationTests.BooksControllerTest" />
-      <option name="METHOD_NAME" value="getBooksViaPaginationTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,8 +168,17 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.LibraryProjectApplication" />
+      <item itemvalue="Docker.libraryProject/docker-compose.yaml.db_library: Compose Deployment" />
+      <item itemvalue="JUnit.All in libraryProject" />
+      <item itemvalue="JUnit.BooksControllerTest" />
+      <item itemvalue="JUnit.epam.com.setMentoringProgram.libraryProject in libraryProject" />
+      <item itemvalue="Spring Boot.LibraryProjectApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LibraryProjectApplication" />
         <item itemvalue="Docker.libraryProject/docker-compose.yaml.db_library: Compose Deployment" />
         <item itemvalue="JUnit.All in libraryProject" />
         <item itemvalue="JUnit.BooksControllerTest" />
@@ -207,6 +218,7 @@
       <workItem from="1666470991878" duration="4601000" />
       <workItem from="1666478219759" duration="25967000" />
       <workItem from="1667574170028" duration="4209000" />
+      <workItem from="1668434534379" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="Library project first commit and push">
       <created>1664548777822</created>
@@ -506,6 +518,11 @@
           <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/utils/validators/VisitorValidator.java</url>
           <line>73</line>
           <option name="timeStamp" value="767" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/libraryProject/src/main/java/epam/com/setMentoringProgram/libraryProject/controllers/ui/WelcomePageController.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="768" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
