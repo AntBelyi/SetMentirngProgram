@@ -100,7 +100,7 @@
       <recent name="epam.com.setMentoringProgram.libraryProject.utils.validators" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LibraryProjectApplication">
+  <component name="RunManager" selected="JUnit.All in libraryProject">
     <configuration name="LibraryProjectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.LibraryProjectApplication" />
       <module name="libraryProject" />
@@ -122,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BooksControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BooksControllerIntegrationTest.assignBookToVisitorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryProject" />
       <extension name="coverage">
         <pattern>
@@ -131,7 +131,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="epam.com.setMentoringProgram.libraryProject.integrationTests" />
-      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.integrationTests.BooksControllerTest" />
+      <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.integrationTests.BooksControllerIntegrationTest" />
       <option name="METHOD_NAME" value="assignBookToVisitorTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -176,14 +176,14 @@
       <item itemvalue="Application.LibraryProjectApplication" />
       <item itemvalue="Docker.libraryProject/docker-compose.yaml.db_library: Compose Deployment" />
       <item itemvalue="JUnit.All in libraryProject" />
-      <item itemvalue="JUnit.BooksControllerTest" />
       <item itemvalue="JUnit.epam.com.setMentoringProgram.libraryProject in libraryProject" />
+      <item itemvalue="JUnit.BooksControllerIntegrationTest.assignBookToVisitorTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.epam.com.setMentoringProgram.libraryProject in libraryProject" />
-        <item itemvalue="JUnit.BooksControllerTest" />
         <item itemvalue="JUnit.All in libraryProject" />
+        <item itemvalue="JUnit.epam.com.setMentoringProgram.libraryProject in libraryProject" />
+        <item itemvalue="JUnit.BooksControllerIntegrationTest.assignBookToVisitorTest" />
         <item itemvalue="Docker.libraryProject/docker-compose.yaml.db_library: Compose Deployment" />
         <item itemvalue="Application.LibraryProjectApplication" />
       </list>
@@ -538,5 +538,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SetMentirngProgram$All_in_libraryProject.ic" NAME="All in libraryProject Coverage Results" MODIFIED="1669935526077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

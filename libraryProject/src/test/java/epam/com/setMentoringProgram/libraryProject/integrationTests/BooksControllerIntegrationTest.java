@@ -48,7 +48,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
         @Sql(value = {"classpath:h2FillOutDBWithData.sql"}, executionPhase = BEFORE_TEST_METHOD),
         @Sql(value = {"classpath:h2ClearFixturesCommand.sql"}, executionPhase = AFTER_TEST_METHOD)
 })
-class BooksControllerTest extends BaseBookAbstractTest {
+class BooksControllerIntegrationTest extends BaseBookAbstractTest {
 
     @Autowired
     private BookRepository bookRepository;
