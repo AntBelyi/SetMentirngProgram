@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryProject/src/test/java/epam/com/setMentoringProgram/libraryProject/LibraryProjectApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="Remove LibraryProjectApplicationTests class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +100,7 @@
       <recent name="epam.com.setMentoringProgram.libraryProject.utils.validators" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in libraryProject">
+  <component name="RunManager" selected="Application.LibraryProjectApplication">
     <configuration name="LibraryProjectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.LibraryProjectApplication" />
       <module name="libraryProject" />
@@ -185,8 +181,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in libraryProject" />
         <item itemvalue="Application.LibraryProjectApplication" />
+        <item itemvalue="JUnit.All in libraryProject" />
         <item itemvalue="Docker.libraryProject/docker-compose.yaml.db_library: Compose Deployment" />
         <item itemvalue="JUnit.BooksControllerTest" />
       </list>
