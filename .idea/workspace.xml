@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="Minor changes" />
+    <list default="true" id="de6b4b5c-0c41-4fc8-8e77-16539d87eacb" name="Changes" comment="Minor changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="JenkinsFix_Part3" />
+        <entry key="$PROJECT_DIR$" value="JenkinsFix_Part5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,7 +102,7 @@
       <recent name="epam.com.setMentoringProgram.libraryProject.utils.validators" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LibraryProjectApplication">
+  <component name="RunManager" selected="JUnit.All in libraryProject">
     <configuration name="LibraryProjectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="epam.com.setMentoringProgram.libraryProject.LibraryProjectApplication" />
       <module name="libraryProject" />
@@ -181,9 +183,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in libraryProject" />
         <item itemvalue="JUnit.epam.com.setMentoringProgram.libraryProject in libraryProject" />
         <item itemvalue="JUnit.BooksControllerTest" />
-        <item itemvalue="JUnit.All in libraryProject" />
         <item itemvalue="Docker.libraryProject/docker-compose.yaml.db_library: Compose Deployment" />
         <item itemvalue="Application.LibraryProjectApplication" />
       </list>
@@ -294,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669899373735</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Minor changes">
+      <created>1669925704365</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669925704365</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
