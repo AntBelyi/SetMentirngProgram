@@ -8,6 +8,8 @@
 
 <body>
 
+<h1>Visitors page: </h1>
+
 <div th:each="visitor : ${visitors}">
     <a th:href="@{/ui/visitors/{id}(id=${visitor.getId()})}" th:text="${visitor.getInitials()}">VALUE</a>
 </div>
